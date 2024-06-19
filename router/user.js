@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const User = require("../Models/create-user"); // Correct path to the User model
+const User = require("https://github.com/BilalShahid-13/demo-api/Models/create-user"); // Correct path to the User model
 
 // Route to get all users
 router.get("/get", async (req, res) => {
