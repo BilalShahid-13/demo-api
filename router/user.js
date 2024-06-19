@@ -13,6 +13,14 @@ router.get("/get", async (req, res) => {
   }
 });
 
+router.get("/", async (req, res) => {
+  try {
+    return res.status(200).send({ msg: "/ route" });
+  } catch (error) {
+    return res.status(500).send({ msg: "error from / route" });
+  }
+});
+
 router.post("/post", async (req, res) => {
   try {
     const body = req.body;
